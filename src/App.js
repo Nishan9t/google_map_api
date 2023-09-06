@@ -1,10 +1,15 @@
 
 import './App.css';
+import Form from './Form';
 
 function App() {
   return (
-    <div className="App">
-     hello
+    <div>
+     <Form/>
+     <div className='absolute h-full w-full'>
+     {/* google map box */}
+
+     </div>
     </div>
   );
 }
