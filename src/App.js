@@ -2,7 +2,7 @@
 import './App.css';
 import Form from './Form';
 //useJsApiLoader => it is a hook which provided weather the map script is loaded or not
-import {useJsApiLoader,GoogleMap} from '@react-google-maps/api'
+import {useJsApiLoader,GoogleMap,Marker} from '@react-google-maps/api'
 
 function App() {
 
@@ -23,8 +23,16 @@ function App() {
      <div className='absolute h-full w-full'>
      {/* google map box */}
 
-      <GoogleMap center={center} zoom={15} mapContainerClassName='w-full h-full '>
-
+      <GoogleMap center={center}
+       zoom={15} 
+      mapContainerClassName='w-full h-full '
+      options={{
+        zoomControl:false,
+        streetViewControl:false,
+        mapTypeControl:false,
+        fullscreenControl:false
+      }}>
+    <Marker position={center}/>
       </GoogleMap>
      </div>
     </div>

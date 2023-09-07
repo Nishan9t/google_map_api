@@ -1,5 +1,6 @@
 import React from 'react'
 import {MdOutlineCancelPresentation} from 'react-icons/md'
+import {BiCurrentLocation} from 'react-icons/bi'
 
 export default function Form() {
   return (
@@ -11,9 +12,10 @@ export default function Form() {
             <button className='text-3xl text-center'><MdOutlineCancelPresentation/></button>
             
         </div>
-        <div className='flex flex-row justify-center'>
-            <h1 className='mr-16'>Distance:</h1>
-            <h1 className='ml-20'>Durations:</h1>
+        <div className='flex flex-row justify-between mx-4'>
+            <h1>Distance:</h1>
+            <h1 >Durations:</h1>
+            <button className='text-2xl'><BiCurrentLocation/></button>
         </div>     
     </div>
   )
